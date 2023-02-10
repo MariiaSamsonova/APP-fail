@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import main.Utilizer;
+import beans.User;
 
 
 
@@ -32,7 +32,7 @@ public class SignIn extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Utilizer user = new Utilizer();
+		User user = new User();
 		
 		request.setAttribute("user", user);
 		
