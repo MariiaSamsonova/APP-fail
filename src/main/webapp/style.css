@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+
+html{
+    	display: block;
+    }
+    body{
+    	background-color: #F8F1FF;
+    	padding: 20%;
+    	padding-top: 3%;
+    }
+     	
+        .topName{
+            font-family :  Helvetica;
+            font-size: 30px;
+            
+        }
+        
+        form{
+    		display: grid;
+    		grid-template-columns: 900fr 1fr;
+    		grid-template-rows: repeat(3, 1fr);
+    		column-gap: 10px;
+    		row-gap: 30px;
+    		grid-template-areas:
+        		"one one"
+        		"two twoEnd"
+        		"three threeEnd"
+				"four four"
+				"five five"
+				"six six"
+				"seven seven"
+				"eight eightEnd";
+		}
+        
+        input{
+        	padding-right: 15px;
+        	color: #534D56;
+        	padding-left: 5%;
+            background-color: #F8F1FF;
+            border-radius: 15px;
+            height: 50px;
+            font-size:large;
+            
+        }
+        
+        .first{
+        	grid-area: one;
+        }
+        
+        .second{
+        	grid-area: two;
+        	grid-column-end:twoEnd;
+        }
+        .third{
+        	grid-area: three;
+        	grid-column-end:threeEnd;
+        }.fourth{
+        	grid-area: four;
+        }.fifth{
+        	grid-area: five;
+        }.sixth{
+        	grid-area: six;
+        }.seventh{
+        	grid-area: seven;
+        }
+        
+        
+        
+        .logIn{
+        	padding-right: 0px;
+            background-color: #DECDF5;
+            border-style: none;
+            border-radius: 20px;
+            width: 90px;
+            height: 40px;
+            font-size: medium;
+            grid-area: threeEnd;
+            
+        }
+        .create{
+        	padding-right: 9px;
+        	background-color: #DECDF5;
+            border-style: none;
+            border-radius: 20px;
+        	width: 145px;
+        	height: 40px;
+			grid-area: eightEnd;
+        }
+        
+        
+        ul{
+        	margin-top:-245px;
+        	margin-left: -20px;
+        }
+        
+        li{
+        	list-style: none;
+        }
+        #createAcc{
+        	font-weight: bold;
+        }
+        
+        a{
+        	font-size: 12px;
+        	font-family: monospace;
+        	font-weight: lighter;
+        	color: black;
+        	text-decoration:none;
+        }
+        
+        a:hover{
+        	text-decoration: underline;
+        }
+        
+        
+        #togglePassword{
+        	color: rgba(0, 0, 0, 0.6);
+        	margin-top: 22px;
+        	margin-left: 50.5px;
+        	grid-area: twoEnd;
+        }

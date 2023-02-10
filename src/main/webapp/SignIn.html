@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<title>OnTrack</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <script type="text/javascript">
+    
+      function showPassword() {
+        document.getElementById('pass-field').type = 'text';
+      }
+      
+      function hidePassword() {
+        document.getElementById('pass-field').type = 'password';
+      }
+    
+    </script>
+    
+    
+    
+    
+  </head>
+  <body>
+     
+     <h1 class="topName" >Log in</h1>
+    <div class="dataTaking">
+        <form action='SignIn' method='POST'>
+        
+            <input type="text" name="Email" class="first" placeholder="Email"/><br> 
+            <input type="password" name="Password"  class="second login" id="pass-field" placeholder="Password"/><br>
+            <i onmousedown="showPassword()" onmouseup="hidePassword()" class="far fa-eye" id="togglePassword"></i>
+            
+            <input class="logIn" type="submit" onClick="" id="submit" value="Log In"/>
+           
+			
+        	
+        </form>
+        
+        <ul>
+  				<li> <a href=" " id="forgotPassword">Forgot my password</a> </li>
+  				<li> <a href="CreateAccount.html" id="createAcc">Create my account</a> </li>
+		</ul>
+
+        
+        
+    </div>
+    
+  </body>
+</html>
